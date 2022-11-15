@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600&family=Inter&display=swap');
+@import "header.css";
+@import "shop-cards.css";
+@import "footer.css";
+@import "registration.css";
+@import "cart.css";
+@import "placing.css";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bariar';
+    src: url('/fonts/BriarDisplay.eot');
+    src: url(/fonts/BriarDisplay.otf);
+}
+
+.shop-headings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 0 57px;
+}
+
+.shop-h2 {
+    padding-left: 67px;
+    font-family: 'Bariar', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background-color: #8781BD;
+}
+
+.shop-name-difference{
+    font-family: 'Bariar', sans-serif;
+    color: #8781BD;
+    background-color: #FFFFFF;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    padding: 5px 56px 5px 20px;
+    background-color: #8781BD;
+    gap: 15px;
+}
+
+.trainers_input{
+    border: none;
+    font-weight: 100;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 10px 5px;
+    background-color: #8781BD;
+    max-width: 100%;
+    width: 272px;
+}
+
+.trainers_input::placeholder{
+    color: #FFFFFF;
+}
+
+.search_btn{
+    cursor: pointer;
+    background-color: #8781BD;
+    border: none;
+}
+
+.goods-wrapper{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    align-items: start;
+    padding: 0 70px;
+}
+
+.side-bar{
+    background-color: #DA98A2;
+    padding: 15px 30px;
+}
+
+
+.custom-checkbox-container{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-left: 5px;
+}
+
+
+.accordion {
+    background-color: #DA98A2;
+    cursor: pointer;
+    padding: 15px 0;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: #FFFFFF;
+}
+
+.accordion-text{
+    padding: 15px 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: #FFFFFF;
+}
+
+.panel {
+    background-color: #DA98A2;
+    max-height: 0;
+    overflow: hidden;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: #FFFFFF;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion:after {
+    content: '🢓';
+    font-size: 20px;
+    color: #FFFFFF;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "🢑";
+}
+
+.checkbox{
+    display: none;
+}
+
+.checkmark{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 50%;
+}
+
+.checkmark:before{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+    background-color: #94C3B1;
+    border: 1px solid white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.checkbox:checked + .checkmark:before{
+    opacity: 1;
+}
+
+.size-cols{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards-and-pagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 120px;
+}
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.left-arrow, .right-arrow{
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: rgba(135, 129, 189, 0.5);;
+}
+
+.page-num{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: #000000;
+}
+
+.left-arrow:hover, .right-arrow:hover{
+    cursor: pointer;
+    background-color: rgba(135, 129, 189, 0.7);;
+}
