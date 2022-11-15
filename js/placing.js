@@ -1,18 +1,12 @@
-const placingModal = document.getElementById("placing-modal");
-const buyBtn = document.querySelector(".cart-buy-btn");
-const closePlacingBtn = document.getElementsByClassName("closePlacing")[0];
+const openPopUp = document.getElementById('open_popup');
+const closePopUp = document.getElementById('btn_close');
+const popUp =document.getElementById('popup');
 
-buyBtn.onclick = function() {
-    event.preventDefault();
-    placingModal.style.display = "block";
-}
+openPopUp.addEventListener('click', function(e){
+    e.preventDefault();
+    popUp.classList.add('active');
+})
 
-closePlacingBtn.onclick = function() {
-    placingModal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == placingModal) {
-        placingModal.style.display = "none";
-    }
-}
+closePopUp.addEventListener('click', () => {
+    popUp.classList.remove('active')
+})
