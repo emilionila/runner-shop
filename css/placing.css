@@ -1,0 +1,350 @@
+.placing-modal {
+    display: none;
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.placing-modal-header {
+    background-color: #94C3B1;
+    padding: 28px 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.placing-modal_heading {
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 49px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.placing-modal-wrapper {
+    position: relative;
+    background-color: #fefefe;
+    margin: 2% auto;
+    border: 1px solid #888;
+    width: 87%;
+}
+
+.closePlacing {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closePlacing:hover,
+.closePlacing:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.process-order-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+    padding-top: 104px;
+    padding-bottom: 140px;
+}
+
+.processing-stages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 78px;
+    padding-bottom: 57px;
+    padding-left: 69px;
+}
+
+.stage-contact {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #8781BD;
+}
+
+.stage-delivery {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #DA98A2;
+}
+
+.stage-payment {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 28px;
+    letter-spacing: 0.05em;
+    color: #94C3B1;
+}
+
+.process-h2 {
+    display: inline;
+    font-family: 'Bariar', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background-color: #8781BD;
+    padding-left: 68px;
+}
+
+.process-h2-different {
+    font-family: 'Bariar', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #8781BD;
+    background-color: #FFFFFF;
+}
+
+.process-contact-details {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 69px;
+    gap: 50px;
+}
+
+#processName, #processNumber, #processEmail {
+    width: 482px;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    padding: 12px 14px;
+    border: 1px solid #8781BD;
+}
+
+#processSubmit {
+    margin-top: 45px;
+    display: block;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    border: 1px solid #8781BD;
+    background-color: #8781BD;
+    padding: 9px 53px;
+}
+
+#processSubmit:hover {
+    cursor: pointer;
+    color: #8781BD;
+    background-color: #FFFFFF;
+}
+
+.process-order-col2 {
+    margin-right: 71px;
+    border: 1px solid #DA98A2;
+}
+
+.order-num-h2 {
+    padding-left: 120px;
+    text-align: right;
+    margin-top: 41px;
+    font-family: 'Bariar', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #DA98A2;
+}
+
+.order-num-h2-difference {
+    font-family: 'Bariar', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background-color: #DA98A2;
+    padding-right: 112px;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+    margin: 34px 43px 30px;
+    gap: 30px;
+}
+
+.order-item-name{
+    font-family: 'Bariar', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.order-item-description{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.order-item-price-info, .order-item-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-item-price{
+    text-align: right;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.order-item-quantity{
+    text-align: right;
+    font-family: 'Inter',sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.line {
+    background-color: #DA98A2;
+    width: 500px;
+    display: block;
+    border: 1px solid #DA98A2;
+    margin: 0 auto;
+}
+
+.order-subtotal, .order-delivery, .order-taxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 43px;
+    margin: 14px 0;
+}
+
+.subtotal-txt, .delivery-txt, .taxes-txt {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #8781BD;
+
+}
+
+.subtotal-price, .delivery-price, .taxes-price {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.grand-total {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grand-total-txt {
+    padding: 10px 0 10px 42px;
+    color: #FFFFFF;
+    font-family: 'Bariar', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    background-color: #DA98A2;
+}
+
+.grand-total-difference {
+    font-family: 'Bariar', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    background-color: #FFFFFF;
+    color: #DA98A2;
+    padding: 10px 0;
+}
+
+.grand-total-price {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background-color: #94C3B1;
+    padding: 10px 41px 10px 13px;
+}
+
+.company-pros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 105px;
+    margin-bottom: 45px;
+}
+
+.fast-delivery, .original-sneakers, .good-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.placing-line1{
+    position: absolute;
+    top: 15%;
+    right: 0;
+}
+
+.placing-line2{
+    position: absolute;
+    left: 0;
+    bottom: 11%;
+}

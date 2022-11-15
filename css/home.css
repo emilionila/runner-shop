@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@400;600&family=Inter&display=swap');
+@import "header.css";
+@import "main.css";
+@import "footer.css";
+@import "registration.css";
+@import "cart.css";
+@import "placing.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bariar';
+    src: url('../bariar/BriarDisplay.eot');
+    src: url(../fonts/BriarDisplay.otf);
+}
+
+a{
+    text-decoration: none;
+}

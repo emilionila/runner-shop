@@ -1,0 +1,156 @@
+.header-nav{
+    background-color: #DA98A2;
+    padding: 0 145px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-right{
+    gap: 5px;
+}
+
+.header-logo{
+    max-width: 100px;
+}
+
+.header-logo-link {
+    position: relative;
+}
+
+.header-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.green-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease-in;
+}
+
+.header-logo-link:hover .green-logo {
+    opacity: 1;
+}
+
+.nav-txt{
+    padding: 41px 23px 23px;
+}
+
+.nav-txt:hover{
+    background-color: #94C3B1;
+    transition: all 0.2s ease-in;
+}
+
+.userIcon, .cartIcon, .language{
+    padding: 41px 23px 23px;
+}
+
+.header-nav_item{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+}
+
+.header-info{
+    background-image: url(main-bg/background-1.png);
+    padding: 32px 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.header-subtitle{
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+}
+
+.header-h2{
+    font-family: 'Bariar', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.shop-now_btn{
+    padding: 22px 60px;
+    background-color: #DA98A2;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.11em;
+    border: 1px solid #DA98A2;
+    color: #FFFFFF;
+    transition: 0.2s all ease-in;
+}
+
+.shop-now_btn:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #DA98A2;
+}
+
+.header-image-item{
+    max-width: 100%;
+    width: 560px;
+    height: 704px;
+}
+
+.header-line{
+    background-color: #94C3B1;
+    padding: 30px 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.new-collection_txt{
+    font-family: 'Bariar', sans-serif;
+    font-size: 32px;
+    line-height: 31px;
+    color: #FFFFFF;
+}
+
+.line1{
+    position: absolute;
+    top: 18%;
+    right: 0;
+}
+
+.line2{
+    position: absolute;
+    left: 0;
+    top: 85%;
+}
