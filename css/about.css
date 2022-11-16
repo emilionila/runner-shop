@@ -109,7 +109,7 @@ li {
 /* _______________________________ */
 
 .about_section_1{
-    background: url(../img/about/bg_about_s1.jpg) no-repeat center top / cover;
+    background: url(../images/about/bg_about_s1.jpg) no-repeat center top / cover;
     padding-bottom: 100px;
     padding-top: 51px;
 }
@@ -416,7 +416,7 @@ li {
 
 /* ____________________________________ */
 .about_section_2{
-    background: url(../img/about/bgshoes.jpg) no-repeat center top / cover;
+    background: url(../images/about/bgshoes.jpg) no-repeat center top / cover;
     padding-bottom: 65px;
     padding-top: 60px;
 }
