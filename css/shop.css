@@ -6,7 +6,9 @@
 @import "cart.css";
 @import "placing.css";
 
-
+a{
+    text-decoration: none;
+}
 
 * {
     margin: 0;

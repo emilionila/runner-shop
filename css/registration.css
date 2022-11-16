@@ -1,3 +1,13 @@
+*{
+    font-family: 'Alumni Sans', sans-serif;
+}
+
+@font-face {
+    font-family: 'Bariar';
+    src: url('/fonts/BriarDisplay.eot');
+    src: url(/fonts/BriarDisplay.otf);
+}
+
 .registration-modal {
     display: none;
     position: fixed;

@@ -1,3 +1,7 @@
+a{
+    color: black;
+}
+
 .cards-container {
     display: flex;
     align-items: center;

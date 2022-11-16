@@ -23,7 +23,7 @@ class ProductList{
 </div>
             
                 <div class="card-body">
-                    <h5 class="card-title">${product.title}<br>
+                    <h5 class="card-title"><a href="product.html">${product.title}</a><br>
                         <span class="card-price">${product.price}$</span>
                     </h5>
                     <p class="card-text">${product.available}</p>

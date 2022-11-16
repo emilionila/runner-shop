@@ -54,6 +54,10 @@
     padding: 41px 23px 23px;
 }
 
+.eng-language{
+    background-color: #94C3B1;
+}
+
 .nav-txt:hover{
     background-color: #94C3B1;
     transition: all 0.2s ease-in;
