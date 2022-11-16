@@ -93,6 +93,10 @@ li {
     padding: 41px 23px 23px;
 }
 
+.nav-shop{
+    margin-left: 24px;
+}
+
 .nav-txt:hover{
     background-color: #94C3B1;
     transition: all 0.2s ease-in;

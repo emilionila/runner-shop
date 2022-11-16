@@ -52,6 +52,9 @@ li {
 .header-logo{
     max-width: 100px;
 }
+.nav-shop{
+    margin-left: 24px;
+}
 
 .header-logo-link {
     position: relative;

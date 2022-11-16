@@ -62,6 +62,10 @@ li {
     gap: 5px;
 }
 
+.nav-shop{
+    margin-left: 24px;
+}
+
 .header-logo{
     max-width: 100px;
 }
