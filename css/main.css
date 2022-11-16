@@ -191,9 +191,10 @@
     line-height: 36px;
     text-align: center;
     letter-spacing: 0.11em;
-    color: white;
     border: 1px solid #8781BD;
     transition: 0.2s all ease-in;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 .read-more_btn:hover{
