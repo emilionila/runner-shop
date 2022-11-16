@@ -2,6 +2,7 @@ const registrationModal = document.getElementById("registration-modal");
 const userIcon = document.querySelector(".userIcon");
 const closeBtn = document.getElementsByClassName("close")[0];
 const signUpBtn = document.getElementById("signUpSubmit");
+const logInBtn = document.getElementById('logInSubmit');
 
 userIcon.onclick = function() {
     event.preventDefault();
@@ -28,3 +29,7 @@ signUpBtn.addEventListener('click', ()=>{
     event.preventDefault();
     showSnackBar();
 })
+
+logInBtn.onclick = function (){
+    window.open('404.html', "_self")
+}

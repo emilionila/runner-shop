@@ -19,5 +19,5 @@ window.onclick = function(event) {
 }
 
 orderBtn.onclick = function (){
-    window.open('thanks.html')
+    window.open('thanks.html', '')
 }
