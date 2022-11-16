@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Briar';
+    src: url("/fonts/bariar/BriarDisplay.otf");
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Alumni Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
+    color: black;
+    font-size: 20px;
+  }
+
+  a {
+    text-decoration: none;
+}
+
+h1, h2, h3, p {
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.header-nav{
+    background-color: #DA98A2;
+    padding: 0 145px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-right{
+    gap: 5px;
+}
+
+.header-logo{
+    max-width: 100px;
+}
+
+.header-logo-link {
+    position: relative;
+}
+
+.header-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.green-logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease-in;
+}
+
+.header-logo-link:hover .green-logo {
+    opacity: 1;
+}
+
+.nav-txt{
+    padding: 41px 23px 23px;
+}
+
+.nav-txt:hover{
+    background-color: #94C3B1;
+    transition: all 0.2s ease-in;
+}
+
+.userIcon, .cartIcon, .language{
+    padding: 41px 23px 23px;
+}
+
+.header-nav_item{
+    color: #ffffff;
+    font-family: 'Alumni Sans';
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+}
+
+/* _______________________________ */
+.thanks_section_1{
+    background: url(../img/thanks/bg_thanks.jpg) no-repeat center top / cover;
+    padding-bottom: 66px;
+    padding-top: 71px;
+    padding-left: 120px;
+    padding-right: 90px;
+}
+.titles_btn_ph{
+    display: flex;
+    justify-content: space-between;
+}
+.titles_bts h1{
+    font-family: 'Briar';
+    font-size: 80px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #8781BD;    
+    margin-top: 145px;
+    margin-left: 50px;
+}
+.titles_bts h2{
+    font-family: 'Briar';
+    font-size: 50px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #DA98A2;    
+    margin-left: 100px;
+}
+.titles_bts p{
+    font-family: 'Briar';
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #8781BD;    
+    margin-top: 98px;
+    margin-bottom: 118px;
+    margin-left: 100px;
+}
+.btn_to_the_shop a{
+    font-family: 'Alumni Sans';
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0.11em;
+    background: #94C3B1;
+    padding: 18px 36px;
+    color: #fff; 
+    text-transform: uppercase;
+    margin-left: 247px;
+}
+.titles_btn_ph img{
+    margin-right: 20px;
+}
+
+/* ____________________"running_line_____________ */
+
+  .running_line {
+    background-color: #DA98A2;
+    padding:  60px 0;
+  }
+ 
+  .block p{
+    font-family: 'Briar';
+    font-size: 80px;
+    line-height: 76px;
+    letter-spacing: 0.05em;  
+    color:#fff;
+    animation: text 15s infinite linear;
+    padding-left: 100%;
+    white-space: nowrap;
+  }
+  @keyframes text {
+    0%{
+      transform: translate(0, 0);
+    }
+    
+    100%{
+      transform: translate(-160%, 0);
+    }
+  }
+.thanks_section_3{
+padding: 55px 100px 47px 100px;
+
+}
+.rec_sec_3{
+    height: 40px;
+    width: 320px;
+    background: #94C3B1;
+    position: absolute;
+    left: 0;
+}
+.title_sec_3 h1{
+    font-family: 'Briar';
+    font-size: 40px;
+    line-height: 38px;
+    letter-spacing: 0.05em;  
+    position: relative;
+    z-index: 2;  
+    margin-left: -14px;
+}
+.goods_sec_3{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+/* __________anim_ */
+
+.sneak_1_anim, .sneak_2_anim, .sneak_3_anim{
+    position:relative;   
+}
+.mask_1, .mask_2, .mask_3{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    background: rgba(255, 255, 255, 0.8);
+    padding:5px;
+    display:none;
+}
+.mask_1 h1{
+    font-family: 'Briar';
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #94C3B1;
+    margin-top: 164px;
+}
+.sneak_1_anim:hover .mask_1{
+    display:block;
+}
+
+.sneak_2_anim:hover .mask_2{
+    display:block;
+}
+.sneak_3_anim:hover .mask_3{
+  display:block;
+}
+.mask_2 h1, .mask_3 h1{
+    margin-top: 130px;
+    font-family: 'Briar';
+    font-size: 60px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #94C3B1;
+}
+.crossed_out_price p, .crossed_out_price_3 p{
+  color: #DA98A2;
+  font-family: 'Briar';
+  text-align: center;
+  font-size: 30px;
+  z-index: 1;
+  letter-spacing: 0.05em;
+}
+.crossed_out_price, .crossed_out_price_3{
+  margin-top: -110px;
+}
+.crossed_out_line, .crossed_out_line_3{
+  border: 1px solid #8781BD;
+  width: 139px;
+  height: 0;
+  margin-left: 115px;
+  margin-top: -30px;
+  z-index: 2;
+  position: relative;
+}
+.crossed_out_line_3{
+  width: 211px;
+ margin-left: 75px;
+
+}
+/* ________________________ */
+
+/* _________________ */
+.ph_name_price_1, .ph_name_price_2, .ph_name_price_3{
+    width: 380px;
+}
+.name_price_1 p, .name_price_2 p, .name_price_3 p{
+    font-family: 'Alumni Sans';
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #8781BD;
+    margin-top: 21px;
+}
+.name_price_1 h2, .name_price_2 h2, .name_price_3 h2{
+    font-family: 'Alumni Sans';
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.09em;
+    color: #DA98A2;
+    margin-top: 12px;
+}
+
+/* ________________footer_____________ */
+.footer {
+    background: #DA98A2;
+    padding: 80px 150px 140px 150px;
+  }
+
+  .footer__body{
+    display: flex;
+    justify-content: space-between;
+  }
+  .left_part_links_footer{
+    display: flex;
+  }
+  .footer__body a, .col_3 p, .col_4 p, .col_5 p {
+    font-family: "Alumni Sans";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+    letter-spacing: 0.05em;
+  }
+  .col_1 li, .col_2 li, .col_3 li, .col_4 li, .col_5 li{
+    padding-bottom: 27px;
+  }
+  .col_1, .col_2, .col_3{
+    margin-right: 78px;
+  }
+  .icons_footer{
+    display: flex;
+  }
+  .col_5 li{
+    margin-right: 20px;
+  }
+ 
