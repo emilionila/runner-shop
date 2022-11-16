@@ -8,6 +8,11 @@
 @import "placing.css";
 @import "main.css";
 
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -262,15 +267,25 @@ li {
     color: #FFFFFF;
     width: 257px;
 }
-.btn_map a{
-    font-family: 'Alumni Sans';
+#open_popup{
+    font-family: 'Alumni Sans', sans-serif;
     font-weight: 400;
     font-size: 25px;
     letter-spacing: 0.11em;
     background: #94C3B1;
-    padding: 18px 28px;
-    color: #fff; 
+    padding: 18px 18px;
+    color: #fff;
+    border: 1px solid #94C3B1;
+    transition: all 0.2s ease-in;
+
 }
+
+#open_popup:hover{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #94C3B1;
+}
+
 .btn_map{
     margin-left: 95px;
     margin-top: 90px;
@@ -612,7 +627,7 @@ li {
     display: flex;
   }
   .footer__body a, .col_3 p, .col_4 p, .col_5 p {
-    font-family: "Alumni Sans";
+    font-family: "Alumni Sans", sans-serif;
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
@@ -631,4 +646,27 @@ li {
   .col_5 li{
     margin-right: 20px;
   }
- 
+
+  .location-different, .social-different, .problems-different, .payment-different, .feedback-different, .delivery-h1, .dimensional-h1{
+      color: #FFFFFF;
+      font-family: "Bariar", sans-serif;
+  }
+
+  .contacts-different, .email-different{
+      font-family: "Bariar", sans-serif;
+      color: #DA98A2;
+  }
+
+.acc-problems-h1, .dimensional-different{
+    font-family: "Bariar", sans-serif;
+    color: #94C3B1;
+}
+
+.payment-h1{
+    color: #DA98A2;
+}
+
+.feedback-h1, .delivery-different{
+    font-family: "Bariar", sans-serif;
+    color: #8781BD;
+}

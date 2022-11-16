@@ -29,7 +29,6 @@
 }
 
 .header-logo {
-    margin: 0 25px 0 0;
     display: block;
     width: 100%;
     height: auto;
@@ -45,6 +44,10 @@
     width: 100%;
     opacity: 0;
     transition: .2s ease-in;
+}
+
+.nav-shop{
+    margin-left: 24px;
 }
 
 .header-logo-link:hover .green-logo {

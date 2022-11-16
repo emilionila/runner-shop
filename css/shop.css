@@ -87,6 +87,7 @@ a{
     grid-template-columns: 0.2fr 1fr;
     align-items: start;
     padding: 0 100px;
+    gap: 95px;
 }
 
 .side-bar{
@@ -226,3 +227,15 @@ a{
     cursor: pointer;
     background-color: rgba(135, 129, 189, 0.7);;
 }
+
+
+.all-goods{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.085em;
+    color: #000000;
+    margin-bottom: 22px;
+    align-self: flex-start;
+}
+
