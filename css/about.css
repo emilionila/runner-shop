@@ -259,7 +259,6 @@ li {
     letter-spacing: 0.085em;
     line-height: 38px;
     margin-top: 5px;
-    z-index: 2;
     position: relative;
 }
 .location p{
