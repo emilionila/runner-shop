@@ -176,13 +176,20 @@ li {
     background: #8781BD;
     text-align: center;
     margin-top: 50px;
-    font-family: 'Alumni Sans';
+    font-family: 'Alumni Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     color: #FFFFFF;
     letter-spacing: 0.11em;
     text-transform: uppercase;
+    border: 1px solid #8781BD;
+    transition: all 0.2s ease-in;
+}
+
+.btn_checkout:hover{
+    background-color: #fff;
+    color: #8781BD;
 }
 
 .v_4{
