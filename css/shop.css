@@ -198,14 +198,16 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 120px;
+    gap: 22px;
 }
 
 .pagination{
     display: flex;
     flex-direction: row;
     align-items: center;
+    align-self: center;
     gap: 15px;
 }
 
@@ -239,3 +241,12 @@ a{
     align-self: flex-start;
 }
 
+.filter{
+    position: relative;
+}
+
+.green-dot{
+    position: absolute;
+    right: -12px;
+    top: 9px;
+}
