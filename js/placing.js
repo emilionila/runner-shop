@@ -19,5 +19,6 @@ window.onclick = function(event) {
 }
 
 orderBtn.onclick = function (){
-    window.open('thanks.html', '')
+    event.preventDefault();
+    window.open('thanks.html', '_self')
 }

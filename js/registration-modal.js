@@ -31,5 +31,6 @@ signUpBtn.addEventListener('click', ()=>{
 })
 
 logInBtn.onclick = function (){
-    window.open('404.html', "_self")
+    event.preventDefault();
+    window.open("404.html","_self")
 }
