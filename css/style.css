@@ -385,7 +385,7 @@ li {
 
 #added{
     width: 262px;
-    right: 48%;
+    right: 36%;
     height: 82px;
     top:58%;
     background: #94C3B1;
@@ -424,12 +424,12 @@ li {
 
 @-webkit-keyframes fdin {
     from {top: 0; opacity: 0;}
-    to {top: 530px; opacity: 1;}
+    to {top: 58%; opacity: 1;}
 }
 
 @keyframes fdin {
     from {top: 0; opacity: 0;}
-    to {top: 530px; opacity: 1;}
+    to {top: 58%; opacity: 1;}
 }
 
 
@@ -440,12 +440,12 @@ li {
 }
 
 @-webkit-keyframes fdout {
-    from {top: 530px; opacity: 1;}
+    from {top: 58%; opacity: 1;}
     to {top: 0; opacity: 0;}
 }
 
 @keyframes fdout {
-    from {top: 530px; opacity: 1;}
+    from {top: 58%; opacity: 1;}
     to {top: 0; opacity: 0;}
 }
 
