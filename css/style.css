@@ -418,16 +418,16 @@ li {
 
 #added.showw {
     visibility: visible;
-    -webkit-animation: fadein 1s, fadeout 0.5s 2.5s;
-    animation: fadein 1s, fadeout 0.5s 2.5s;
+    -webkit-animation: fdin 1s, fdout 0.5s 2.5s;
+    animation: fdin 1s, fdout 0.5s 2.5s;
 }
 
-@-webkit-keyframes fadein {
+@-webkit-keyframes fdin {
     from {top: 0; opacity: 0;}
     to {top: 530px; opacity: 1;}
 }
 
-@keyframes fadein {
+@keyframes fdin {
     from {top: 0; opacity: 0;}
     to {top: 530px; opacity: 1;}
 }
@@ -435,16 +435,16 @@ li {
 
 #added.close {
     visibility: visible;
-    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    -webkit-animation: fdin 0.5s, fdout 0.5s 2.5s;
+    animation: fdin 0.5s, fdout 0.5s 2.5s;
 }
 
-@-webkit-keyframes fadeout {
+@-webkit-keyframes fdout {
     from {top: 530px; opacity: 1;}
     to {top: 0; opacity: 0;}
 }
 
-@keyframes fadeout {
+@keyframes fdout {
     from {top: 530px; opacity: 1;}
     to {top: 0; opacity: 0;}
 }
