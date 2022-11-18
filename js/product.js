@@ -37,3 +37,16 @@ AddedBtn.addEventListener('click', ()=>{
     event.preventDefault();
     showwAdded();
 })
+
+
+const SizesBtn = document.getElementById("btn_size");
+function shoowSizes() {
+    const x = document.getElementById("sizes");
+    x.className = "shoow";
+    setTimeout(function(){ x.className = x.className.replace("shoow", ""); }, 3000);
+}
+
+SizesBtn.addEventListener('click', ()=>{
+    event.preventDefault();
+    shoowSizes();
+})
