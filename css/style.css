@@ -229,7 +229,7 @@ li {
 }
 
 .rating_stock{
-    padding-top: 33px;
+    padding-top: 30px;
     display: flex;
 
 }
@@ -255,7 +255,7 @@ li {
 }
 
 .new_price{
-    margin-top: 35px;
+    margin-top: 30px;
 }
 .new_price p{
     font-family: 'Alumni Sans';
@@ -276,12 +276,12 @@ li {
 
 .colors h1{
     text-transform: uppercase;
-    margin-top: 126px;
+    margin-top: 115px;
 }
 
 .colors_sq{
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .color_v, .color_p, .color_g{
     width: 65px;
@@ -325,8 +325,9 @@ li {
 
 .btn_size{
     width: 100px;
-    height: 22px;
+    height: 20px;
     background: #8781BD;
+    border: 1px solid #8781BD;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
@@ -343,13 +344,26 @@ li {
     height: 24px;
     background: #8781BD;
     margin-left: 36px;
-    
     padding-left: 12px;
-    padding-right: 12px;
-    
+    padding-right: 12px; 
 }
-
-.numerosity p{
+.numerosity_2{
+    display: none;
+    /* display: flex; */
+    width: 49px;
+    height: 24px;
+    background: #8781BD;
+    margin-left: 154px;
+    padding-left: 12px;
+    padding-right: 12px; 
+    position: absolute;
+    z-index: 2; 
+}
+.numerosity_2.active{
+    display: block;
+    display: flex;
+}
+.numerosity p, .numerosity_2 p{
     color: #fff;
     font-family: 'Inter';
     font-weight: 400;
@@ -359,7 +373,6 @@ li {
     padding-left: 11px;
     padding-top: 3px;
 }
-
 .btn_min, .btn_pl{
     color: #fff;
     font-family: 'Inter';
@@ -367,14 +380,88 @@ li {
     font-size: 16px;
 }
 
+/* asdfgn */
+
+
+#added{
+    width: 262px;
+    right: 40%;
+    height: 82px;
+    top:58%;
+    background: #94C3B1;
+    visibility: hidden;
+    position: absolute;
+    z-index: 2;
+    padding: 59px 69px;
+}
+#added p{
+    font-family: 'Alumni Sans';
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+}
+
+.added_v1{
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -60px;
+}
+.added_v2{
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+#added.showw {
+    visibility: visible;
+    -webkit-animation: fadein 1s, fadeout 0.5s 2.5s;
+    animation: fadein 1s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 530px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 530px; opacity: 1;}
+}
+
+
+#added.close {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 530px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 530px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+/* asdfgn */
+
+
+
 .btn_to_cart, .btn_buy{
     display: block;
     width: 218px;
-    height: 45px;
+    height: 43px;
     padding-top: 10px;
     /* padding-top: 18px;
     padding-bottom: 18px; */
     background: #94C3B1;
+    border: 1px solid #94C3B1;
     text-align: center;
     margin-top: 42px;
     font-family: 'Alumni Sans';
@@ -388,7 +475,17 @@ li {
 
 .btn_buy{
     background: #DA98A2;
-    margin-top: 30px;
+    border: 1px solid #DA98A2;
+    margin-top: 45px;
+}
+
+:hover.btn_to_cart{
+    color: #94C3B1;
+    background: rgb(255, 255, 255);
+}
+:hover.btn_buy{
+    color: #DA98A2;
+    background: rgb(255, 255, 255);
 }
 
 .about{
