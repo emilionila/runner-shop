@@ -382,6 +382,54 @@ li {
 
 /* asdfgn */
 
+#sizes {
+    visibility: hidden;
+    position: absolute;
+    min-width: 420px;
+    margin-top: 24px;
+    background-color: #8781BD;
+    padding: 30px 35px;
+}
+
+#sizes p{
+    font-family: 'Briar';
+    font-size: 40px;
+    line-height: 179.5%;
+    letter-spacing: 0.05em;
+    color: #fff;  
+}
+#sizes.shoow {
+    visibility: visible;
+    -webkit-animation: fin 0.5s, fout 0.5s 2.5s;
+    animation: fin 0.5s, fout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fin {
+    from {right: -480px; }
+    to {right: -0; }
+}
+
+@keyframes fin {
+    from {right: -480px; }
+    to {right: 0; }
+}
+
+#sizes.cloose {
+    visibility: visible;
+    -webkit-animation: fin 0.5s, fout 0.5s 2.5s;
+    animation: fin 0.5s, fout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fout {
+    from {right: 0; }
+    to {right: -480px; }
+}
+
+@keyframes fout {
+    from {right: -0; }
+    to {right: -480px;}
+}
+/* _____________ */
 
 #added{
     width: 262px;
