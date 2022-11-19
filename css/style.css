@@ -125,7 +125,7 @@ li {
 .product_photo{
     width: 780px;
     height: 645px;
-    background: url(../img/product/1.png);
+    background: url(../images/product/1.png);
 }
 .next_ph, .back_ph{
     padding: 30px 0px 0px 30px;
@@ -139,7 +139,7 @@ li {
     position: absolute;
     width: 780px;
     height: 645px;
-    background: url(../img/product/1_2.png);
+    background: url(../images/product/1_2.png);
     z-index: 2;
 }
 .product_photo_2.active {
